@@ -1,0 +1,33 @@
+[debug] [2019-06-10T22:09:00.618Z] ----------------------------------------------------------------------
+[debug] [2019-06-10T22:09:00.623Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-10T22:09:00.623Z] CLI Version:   6.8.0
+[debug] [2019-06-10T22:09:00.624Z] Platform:      linux
+[debug] [2019-06-10T22:09:00.624Z] Node Version:  v8.10.0
+[debug] [2019-06-10T22:09:00.624Z] Time:          Mon Jun 10 2019 16:09:00 GMT-0600 (MDT)
+[debug] [2019-06-10T22:09:00.624Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-10T22:09:00.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-10T22:09:00.639Z] > authorizing via signed-in user
+[debug] [2019-06-10T22:09:00.639Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-10T22:09:00.643Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-10T22:09:01.298Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-10T22:09:01.319Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+ 
+[debug] [2019-06-10T22:09:01.653Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/creativeProjects/creative4'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-10T22:09:02.658Z] Fetching environment
+[debug] [2019-06-10T22:09:02.662Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
+ 
+[debug] [2019-06-10T22:09:02.663Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-10T22:09:03.068Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-10T22:09:03.177Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-10T22:09:03.178Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-10T22:09:06.224Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
