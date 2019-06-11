@@ -8,30 +8,50 @@
   <body>
     <div id="app">
       <div class="header">
-        <h1>Creative Project 4</h1>
+        <h1>Welcome to the Student Grading Database</h1>
       </div>
       <br>
       <form @submit.prevent="addTicket">
         <div class= "newComment">
           <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
           <br>
+          <br>
           <textarea class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment"></textarea>
+          <br>
+          <br>
           <input type="text" placeholder="Student Grade" id="gradeInput" v-model="addedGrade">
           <input type="text" placeholder="Project Evaluation" id="evaluationInput" v-model="addedEvaluation">
           <input type="text" placeholder="Notes" id="notesInput" v-model="addedNotes">
           <button id="submitButton">Submit</button>
         </div>
       </form>
-      <div v-for="">
+      <div v-for="student in tickets">
           <div class="item">
               <div class="itemBox">
-
+                <h1 class="studentInfo">
+                  {{ student.addedName }}
+                </h1>
+                <h1 class="studentInfo">
+                  {{ student.addedAssignment }}
+                </h1>
+                <h1 class="studentInfo">
+                  {{ student.addedGrade }}
+                </h1>
+                <h1 class="studentInfo">
+                  {{ student.addedEvaluation }}
+                </h1>
+                <h1 class="studentInfo">
+                  {{ student.addedNotes }}
+                </h1>
                  <!--This is where you put your comments info
                 #flex styling may need to be changed to give the right
                 #look and feel for a comments/grading section-->
               </div>
           </div>
       </div>
+    </div>
+    <div id="footer">
+        Source code by Justin Kinsella and Devon Ward can found at : <a href="https://github.com/JustinKinsella/cs260creative4" style="padding-right: 5px;">github</a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
