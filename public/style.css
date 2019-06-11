@@ -20,8 +20,38 @@
 }
 
 .newComment {
-    top: 30px;
-    left: 15%;
-    right: 15%;    
+   height: 40%;
+   margin: 100px;
+   margin-top: 25px;
+   padding: 40px;
+   border: solid 1px black;
+   background: #5fcef0b7;
+   overflow: auto;
+    
+}
+
+#nameInput {
+    padding: 4px;
+    width: 20%;
+
+}
+
+#commentInput {
+    margin-top: 10px;
+    padding:10px;
+    width: 100%;
+    float: left;
+    max-width: 100%;
+}
+
+#submitButton {
+    border-radius: 3px;
+    padding: 2px;
+    margin-top:4px;
+    float: right;
+    
+}
+#submitButton :hover {
+    background: #42cbf4;
     
 }
