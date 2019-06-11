@@ -2,7 +2,10 @@ let app = new Vue({
     el: '#app',
     data: {
         addedName: '',
-        addedProblem: '',
+        addedAssignment: '',
+        addedGrade: '',
+        addedEvaluation: '',
+        addedNotes: '',
         tickets: []
     },
     created(){
@@ -13,11 +16,17 @@ let app = new Vue({
             try {
                 let response = await axios.post("http://localhost:5000/api/tickets", {
                   name: this.addedName,
-                  problem: this.addedProblem
+                  assignment: this.addedAssignment,
+                  grade: this.addedGrade,
+                  evaluation: this.addedEvaluation,
+                  notes: this.addedNotes,
                 });
                 console.log("ADD TICKET - RESPONSE: ",response);
                 this.addedName = "";
-                this.addedProblem = "";
+                this.addedAssignment = "";
+                this.addedGrade = "";
+                this.addedEvaluation = "";
+                this.addedNotes = "";
                 this.getTickets();
                 return true;
               } catch (error) {

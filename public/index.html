@@ -15,7 +15,10 @@
         <div class= "newComment">
           <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
           <br>
-          <textarea class="commentText" placeholder="Your comment" id="commentInput" v-model="addedProblem"></textarea>
+          <textarea class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment"></textarea>
+          <input type="text" placeholder="Student Grade" id="gradeInput" v-model="addedGrade">
+          <input type="text" placeholder="Project Evaluation" id="evaluationInput" v-model="addedEvaluation">
+          <input type="text" placeholder="Notes" id="notesInput" v-model="addedNotes">
           <button id="submitButton">Submit</button>
         </div>
       </form>

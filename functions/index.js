@@ -21,7 +21,10 @@ app.post('/api/tickets', async (req, res) => {
   let ticket = {
     id: numRecords + 2,
     name: req.body.name,
-    problem: req.body.problem
+    assignment: req.body.assignment,
+    grade: req.body.grade,
+    evaluation: req.body.evaluation,
+    notes: req.body.notes,
   };
   ticketsRef.doc(ticket.id.toString()).set(ticket);
   res.send(ticket);
