@@ -32,27 +32,63 @@
 }
 
 #nameInput {
-    padding: 4px;
-    width: 20%;
-    min-width: 200px;
-
+  margin-top: 10px;
+  padding: 4px;
+  width: 40%;
+  min-width: 150px;
+  display: float;
 }
 
-#commentInput {
-    margin-top: 10px;
-    padding:10px;
-    width: 100%;
-    float: left;
-    max-width: 100%;
-    min-width: 200px;
+#assignmentInput {
+  margin-top: 10px;
+  padding: 4px;
+  width: 70%;
+  min-width: 150px;
+  display: float;
+}
+
+#gradeInput {
+  margin-top: 10px;
+  padding: 4px;
+  width: 5%;
+  min-width: 40px;
+  display: float;
+}
+
+#evaluationInput {
+  margin-top: 10px;
+  padding: 4px;
+  width: 70%;
+  min-width: 150px;
+  display: float;
+}
+
+#notesInput {
+  margin-top: 10px;
+  padding: 4px;
+  width: 70%;
+  min-width: 150px;
+  display: float;
 }
 
 #submitButton {
+    /*
     border-radius: 3px;
     padding: 2px;
     margin-top:4px;
+    */
     float: right;
-
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    width: 200px;
+    font-size: 20px;
 }
 #submitButton :hover {
     background: #42cbf4;
