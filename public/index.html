@@ -4,31 +4,34 @@
     <meta charset="utf-8">
     <title>Creative Project 4</title>
     <link rel="stylesheet" href="./style.css">
-
   </head>
-
-
   <body>
-    <div class="header">  
-      <h1>Creative Project 4</h1>
-    </div>
-    <br>
-    <div class= "newComment">
-      <input type="text" placeholder="Your Name" id="nameInput">
+    <div id="app">
+      <div class="header">
+        <h1>Creative Project 4</h1>
+      </div>
       <br>
-      <textarea class="commentText" placeholder="Your comment" id="commentInput"></textarea> 
-      <button id="submitButton" >Submit</button>
-    </div>
+      <form @submit.prevent="addTicket">
+        <div class= "newComment">
+          <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
+          <br>
+          <textarea class="commentText" placeholder="Your comment" id="commentInput" v-model="addedProblem"></textarea>
+          <button id="submitButton">Submit</button>
+        </div>
+      </form>
+      <div v-for="">
+          <div class="item">
+              <div class="itemBox">
 
-    <div v-for="">
-        <div class="item">
-            <div class="itemBox">
-               <!--This is where you put your comments info  
-              #flex styling may need to be changed to give the right
-              #look and feel for a comments/grading section-->
-            </div>
-        </div>  
+                 <!--This is where you put your comments info
+                #flex styling may need to be changed to give the right
+                #look and feel for a comments/grading section-->
+              </div>
+          </div>
+      </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

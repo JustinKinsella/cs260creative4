@@ -34,9 +34,13 @@ let app = new Vue({
             }
         },
         async getTickets(){
+          try {
             let response = await axios.get("http://localhost:5000/api/tickets");
             console.log("GET TICKET - RESPONSE: ",response);
             this.tickets = response.data;
+          } catch (error) {
+            console.log(error);
+          }
         }
     }
 });
