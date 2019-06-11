@@ -1,0 +1,33 @@
+[debug] [2019-06-11T22:24:29.859Z] ----------------------------------------------------------------------
+[debug] [2019-06-11T22:24:29.860Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-11T22:24:29.861Z] CLI Version:   6.7.2
+[debug] [2019-06-11T22:24:29.861Z] Platform:      linux
+[debug] [2019-06-11T22:24:29.861Z] Node Version:  v8.10.0
+[debug] [2019-06-11T22:24:29.861Z] Time:          Tue Jun 11 2019 16:24:29 GMT-0600 (MDT)
+[debug] [2019-06-11T22:24:29.861Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-11T22:24:29.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-11T22:24:29.867Z] > authorizing via signed-in user
+[debug] [2019-06-11T22:24:29.867Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-11T22:24:29.868Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-11T22:24:30.266Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T22:24:30.272Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+ 
+[debug] [2019-06-11T22:24:30.663Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/devon/Programming/CS260/creativeProjects/creative4/cs260creative4'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-11T22:24:31.019Z] Fetching environment
+[debug] [2019-06-11T22:24:31.022Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
+ 
+[debug] [2019-06-11T22:24:31.023Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-11T22:24:31.238Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T22:24:31.239Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-11T22:24:31.285Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-11T22:24:32.268Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/justink-creative/us-central1/app
