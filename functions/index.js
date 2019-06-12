@@ -32,6 +32,7 @@ app.post('/api/tickets', async (req, res) => {
 
 app.delete('/api/tickets/:id', async (req, res) => {
   let id = req.params.id.toString();
+  console.log("the ID is ", id)
   var documentToDelete = ticketsRef.doc(id);
   try {
     var doc = await documentToDelete.get();

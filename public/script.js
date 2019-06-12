@@ -6,7 +6,7 @@ let app = new Vue({
         addedGrade: '',
         addedEvaluation: '',
         addedNotes: '',
-        tickets: []
+        tickets: [],
     },
     created(){
         this.getTickets();
@@ -28,6 +28,7 @@ let app = new Vue({
                 this.addedEvaluation = "";
                 this.addedNotes = "";
                 this.getTickets();
+                document.location.reload(true); //Forces page to reload from server instead of cache
                 return true;
               } catch (error) {
                 console.log(error);
@@ -37,6 +38,7 @@ let app = new Vue({
             try {
               let response = axios.delete("http://localhost:5000/api/tickets/" + ticket.id);
               this.getTickets();
+              document.location.reload(true); //Forces page to reload from server instead of cache
               return true;
             } catch (error) {
               console.log(error);

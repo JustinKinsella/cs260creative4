@@ -14,38 +14,45 @@
       <form @submit.prevent="addTicket">
         <div class= "newComment">
           <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
-
           <textarea class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment"></textarea>
           <br>
           <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade">
           <br>
-          <input type="text" placeholder="Project Evaluation" id="evaluationInput" v-model="addedEvaluation">
+          <input type="text" placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation">
           <br>
           <input type="text" placeholder="Notes" id="notesInput" v-model="addedNotes">
           <button id="submitButton">Submit</button>
         </div>
       </form>
+      <div id="gradeDisplay" class= "newComment">
+        <h1> Summary </h1>
+        <div v-for="rank in tickets">
+          <h4> {{ rank.name }}: {{ rank.grade }} ___ {{ rank.notes }} </h4>
+        </div>
+      </div>
       <div class="container">
           <div class="item"  v-for="student in tickets" >
               <div class="itemBox">
                 <h1 class="studentInfo">
-                  {{ student.name }}
+                  Name: {{ student.name }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.assignment }}
+                  Assignment: {{ student.assignment }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.grade }}
+                  Grade: {{ student.grade }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.evaluation }}
+                  Student Evaluation: {{ student.evaluation }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.notes }}
+                  Notes: {{ student.notes }}
                 </h1>
-                 <!--This is where you put your comments info
-                #flex styling may need to be changed to give the right
-                #look and feel for a comments/grading section-->
+                <button id="deleteButton" @click="deleteTicket(student)"> Delete </button>
               </div>
           </div>
       </div>
