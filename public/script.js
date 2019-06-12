@@ -36,7 +36,9 @@ let app = new Vue({
         async deleteTicket(ticket) {
             try {
               let response = axios.delete("http://localhost:5000/api/tickets/" + ticket.id);
+              console.log("I also made it here");
               this.getTickets();
+              console.log("I break right here");
               return true;
             } catch (error) {
               console.log(error);

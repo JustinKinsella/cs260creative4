@@ -14,7 +14,6 @@
       <form @submit.prevent="addTicket">
         <div class= "newComment">
           <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
-
           <textarea class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment"></textarea>
           <br>
           <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade">
@@ -29,23 +28,25 @@
           <div class="item"  v-for="student in tickets" >
               <div class="itemBox">
                 <h1 class="studentInfo">
-                  {{ student.addedName }}
+                  Name: {{ student.name }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.addedAssignment }}
+                  Assignment: {{ student.assignment }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.addedGrade }}
+                  Grade: {{ student.grade }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.addedEvaluation }}
+                  Evaluation: {{ student.evaluation }}
                 </h1>
+                <br>
                 <h1 class="studentInfo">
-                  {{ student.addedNotes }}
+                  Notes: {{ student.notes }}
                 </h1>
-                 <!--This is where you put your comments info
-                #flex styling may need to be changed to give the right
-                #look and feel for a comments/grading section-->
+                <button id="deleteButton" @click="deleteTicket(student)"> Delete </button>
               </div>
           </div>
       </div>
