@@ -18,12 +18,18 @@
           <br>
           <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade">
           <br>
-          <input type="text" placeholder="Project Evaluation" id="evaluationInput" v-model="addedEvaluation">
+          <input type="text" placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation">
           <br>
           <input type="text" placeholder="Notes" id="notesInput" v-model="addedNotes">
           <button id="submitButton">Submit</button>
         </div>
       </form>
+      <div id="gradeDisplay" class= "newComment">
+        <h1> Summary </h1>
+        <div v-for="rank in tickets">
+          <h4> {{ rank.name }}: {{ rank.grade }} ___ {{ rank.notes }} </h4>
+        </div>
+      </div>
       <div class="container">
           <div class="item"  v-for="student in tickets" >
               <div class="itemBox">
@@ -40,7 +46,7 @@
                 </h1>
                 <br>
                 <h1 class="studentInfo">
-                  Evaluation: {{ student.evaluation }}
+                  Student Evaluation: {{ student.evaluation }}
                 </h1>
                 <br>
                 <h1 class="studentInfo">
