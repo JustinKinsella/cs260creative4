@@ -25,8 +25,8 @@
           <button id="submitButton">Submit</button>
         </div>
       </form>
-      <div class="container" v-for="student in tickets">
-          <div class="item">
+      <div class="container">
+          <div class="item"  v-for="student in tickets" >
               <div class="itemBox">
                 <h1 class="studentInfo">
                   {{ student.addedName }}
