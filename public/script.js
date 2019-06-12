@@ -28,6 +28,7 @@ let app = new Vue({
                 this.addedEvaluation = "";
                 this.addedNotes = "";
                 this.getTickets();
+                document.location.reload(true);
                 return true;
               } catch (error) {
                 console.log(error);
@@ -36,9 +37,8 @@ let app = new Vue({
         async deleteTicket(ticket) {
             try {
               let response = axios.delete("http://localhost:5000/api/tickets/" + ticket.id);
-              console.log("I also made it here");
               this.getTickets();
-              console.log("I break right here");
+              document.location.reload(true);
               return true;
             } catch (error) {
               console.log(error);
