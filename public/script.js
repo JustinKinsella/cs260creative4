@@ -45,8 +45,10 @@ let app = new Vue({
         async getTickets(){
           try {
             let response = await axios.get("http://localhost:5000/api/tickets");
-            console.log("GET TICKET - RESPONSE: ",response);
-            this.tickets = response.data;
+            const myObj = JSON.stringify(response.data);
+            console.log("GET TICKET - RESPONSE: ", JSON.parse(myObj));
+            
+            this.tickets = JSON.parse(myObj);
           } catch (error) {
             console.log(error);
           }

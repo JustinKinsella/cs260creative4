@@ -1,0 +1,78 @@
+[debug] [2019-06-12T03:26:26.144Z] ----------------------------------------------------------------------
+[debug] [2019-06-12T03:26:26.149Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-12T03:26:26.150Z] CLI Version:   6.8.0
+[debug] [2019-06-12T03:26:26.150Z] Platform:      linux
+[debug] [2019-06-12T03:26:26.150Z] Node Version:  v8.10.0
+[debug] [2019-06-12T03:26:26.150Z] Time:          Tue Jun 11 2019 21:26:26 GMT-0600 (MDT)
+[debug] [2019-06-12T03:26:26.150Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-12T03:26:26.166Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-12T03:26:26.166Z] > authorizing via signed-in user
+[debug] [2019-06-12T03:26:26.166Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-12T03:26:26.170Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-12T03:26:43.048Z] ----------------------------------------------------------------------
+[debug] [2019-06-12T03:26:43.053Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-12T03:26:43.053Z] CLI Version:   6.8.0
+[debug] [2019-06-12T03:26:43.053Z] Platform:      linux
+[debug] [2019-06-12T03:26:43.053Z] Node Version:  v8.10.0
+[debug] [2019-06-12T03:26:43.053Z] Time:          Tue Jun 11 2019 21:26:43 GMT-0600 (MDT)
+[debug] [2019-06-12T03:26:43.054Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-12T03:26:43.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-12T03:26:43.069Z] > authorizing via signed-in user
+[debug] [2019-06-12T03:26:43.069Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-12T03:26:43.073Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-12T03:26:43.448Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T03:26:43.456Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+ 
+[debug] [2019-06-12T03:26:43.761Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/creativeProjects/creative4'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-12T03:26:44.759Z] Fetching environment
+[debug] [2019-06-12T03:26:44.762Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
+ 
+[debug] [2019-06-12T03:26:44.763Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-12T03:26:45.074Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T03:26:45.075Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-12T03:26:45.273Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-12T03:26:48.124Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/justink-creative/us-central1/app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
