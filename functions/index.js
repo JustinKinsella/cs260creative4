@@ -49,4 +49,26 @@ app.delete('/api/tickets/:id', async (req, res) => {
   }
 });
 
+app.put('/api/tickets/:id', async (req, res) => {
+  let id = req.params.id.toString();
+  var toEdit = ticketsRef.doc(id);
+  
+  try {
+    var doc = await toEdit.get();
+    let ticket = {
+      grade: req.params.grade,
+    };
+    if(!doc.exists) {
+      res.status(404).send("That item does not exist!");
+      return;
+    }
+    else {
+      ticketsRef.doc(ticket.id.toString()).set(ticket);
+      res.send(ticket);
+    }
+  } catch (error) {
+    res.sendStatus(500).send("Could not edit doc id " + id);
+  }
+});
+
 exports.app = functions.https.onRequest(app);

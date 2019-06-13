@@ -14,7 +14,7 @@ let app = new Vue({
     methods: {
         async addTicket(){
             try {
-                let response = await axios.post("http://localhost:5000/api/tickets", {
+                let response = await axios.post("/api/tickets", {
                   name: this.addedName,
                   assignment: this.addedAssignment,
                   grade: this.addedGrade,
@@ -36,7 +36,7 @@ let app = new Vue({
         },
         async deleteTicket(ticket) {
             try {
-              let response = axios.delete("http://localhost:5000/api/tickets/" + ticket.id);
+              let response = axios.delete("/api/tickets/" + ticket.id);
               this.getTickets();
               window.location.reload(true); //Forces page to reload from server instead of cache
               return true;
@@ -44,9 +44,34 @@ let app = new Vue({
               console.log(error);
             }
         },
+
+        async editItemA(ticket) {
+          try {
+            let response = await axios.put("/api/tickets/" + ticket.id, {
+              grade: "A",
+            });
+            this.getTickets();
+            return true;
+          } catch (error) {
+            console.log(error);
+          }
+        },
+
+        async editItemF(ticket) {
+          try {
+            let response = await axios.put("/api/tickets/" + ticket.id, {
+              grade: "F",
+            });
+            this.getTickets();
+            return true;
+          } catch (error) {
+            console.log(error);
+          }
+        },
+
         async getTickets(){
           try {
-            let response = await axios.get("http://localhost:5000/api/tickets");
+            let response = await axios.get("/api/tickets");
             const myObj = JSON.stringify(response.data);
             console.log("GET TICKET - RESPONSE: ", JSON.parse(myObj));
 

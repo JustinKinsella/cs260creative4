@@ -138,6 +138,17 @@ body {
   float: right;
 }
 
+.editButton {
+  background-color: grey;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  float: right;
+}
+
 #submitButton {
 
     background-color: grey;
