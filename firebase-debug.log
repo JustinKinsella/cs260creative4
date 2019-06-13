@@ -1,75 +1,119 @@
-[debug] [2019-06-12T03:26:26.144Z] ----------------------------------------------------------------------
-[debug] [2019-06-12T03:26:26.149Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-12T03:26:26.150Z] CLI Version:   6.8.0
-[debug] [2019-06-12T03:26:26.150Z] Platform:      linux
-[debug] [2019-06-12T03:26:26.150Z] Node Version:  v8.10.0
-[debug] [2019-06-12T03:26:26.150Z] Time:          Tue Jun 11 2019 21:26:26 GMT-0600 (MDT)
-[debug] [2019-06-12T03:26:26.150Z] ----------------------------------------------------------------------
+[debug] [2019-06-12T22:43:51.347Z] ----------------------------------------------------------------------
+[debug] [2019-06-12T22:43:51.352Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-12T22:43:51.353Z] CLI Version:   6.8.0
+[debug] [2019-06-12T22:43:51.353Z] Platform:      linux
+[debug] [2019-06-12T22:43:51.353Z] Node Version:  v8.10.0
+[debug] [2019-06-12T22:43:51.353Z] Time:          Wed Jun 12 2019 16:43:51 GMT-0600 (MDT)
+[debug] [2019-06-12T22:43:51.353Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-06-12T03:26:26.166Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-12T03:26:26.166Z] > authorizing via signed-in user
-[debug] [2019-06-12T03:26:26.166Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
-[debug] [2019-06-12T03:26:26.170Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+[debug] [2019-06-12T22:43:51.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-12T22:43:51.372Z] > authorizing via signed-in user
+[debug] [2019-06-12T22:43:51.372Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-12T22:43:51.376Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-12T22:43:51.376Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-12T22:43:51.665Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:43:51.677Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
 
-[debug] [2019-06-12T03:26:43.048Z] ----------------------------------------------------------------------
-[debug] [2019-06-12T03:26:43.053Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-12T03:26:43.053Z] CLI Version:   6.8.0
-[debug] [2019-06-12T03:26:43.053Z] Platform:      linux
-[debug] [2019-06-12T03:26:43.053Z] Node Version:  v8.10.0
-[debug] [2019-06-12T03:26:43.053Z] Time:          Tue Jun 11 2019 21:26:43 GMT-0600 (MDT)
-[debug] [2019-06-12T03:26:43.054Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-06-12T03:26:43.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-12T03:26:43.069Z] > authorizing via signed-in user
-[debug] [2019-06-12T03:26:43.069Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
-[debug] [2019-06-12T03:26:43.073Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
-
-[debug] [2019-06-12T03:26:43.448Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-12T03:26:43.456Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+[debug] [2019-06-12T22:43:52.160Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:43:52.165Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
  
-[debug] [2019-06-12T03:26:43.761Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:43:52.361Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/creativeProjects/creative4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-12T22:43:52.399Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-12T22:43:53.114Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-12T22:45:19.223Z] ----------------------------------------------------------------------
+[debug] [2019-06-12T22:45:19.228Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-12T22:45:19.228Z] CLI Version:   6.8.0
+[debug] [2019-06-12T22:45:19.229Z] Platform:      linux
+[debug] [2019-06-12T22:45:19.229Z] Node Version:  v8.10.0
+[debug] [2019-06-12T22:45:19.229Z] Time:          Wed Jun 12 2019 16:45:19 GMT-0600 (MDT)
+[debug] [2019-06-12T22:45:19.229Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-12T22:45:19.243Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-12T22:45:19.244Z] > authorizing via signed-in user
+[debug] [2019-06-12T22:45:19.244Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-12T22:45:19.248Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-12T22:45:19.745Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:45:19.752Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+ 
+[debug] [2019-06-12T22:45:20.056Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/justin/Desktop/CS260/creativeProjects/creative4'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2019-06-12T03:26:44.759Z] Fetching environment
-[debug] [2019-06-12T03:26:44.762Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
+[debug] [2019-06-12T22:45:21.635Z] Fetching environment
+[debug] [2019-06-12T22:45:21.639Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
  
-[debug] [2019-06-12T03:26:44.763Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+[debug] [2019-06-12T22:45:21.640Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
  
-[debug] [2019-06-12T03:26:45.074Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-12T03:26:45.075Z] Starting @google-cloud/functions-emulator
-[debug] [2019-06-12T03:26:45.273Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:45:21.919Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-12T22:45:21.924Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-12T22:45:22.085Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-06-12T03:26:48.124Z] Parsing function triggers
+[debug] [2019-06-12T22:45:25.494Z] Parsing function triggers
 [info] ✔  functions: app: http://localhost:5001/justink-creative/us-central1/app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
-[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /favicon.ico to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[debug] [2019-06-13T00:22:38.725Z] ----------------------------------------------------------------------
+[debug] [2019-06-13T00:22:38.730Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-13T00:22:38.730Z] CLI Version:   6.8.0
+[debug] [2019-06-13T00:22:38.730Z] Platform:      linux
+[debug] [2019-06-13T00:22:38.731Z] Node Version:  v8.10.0
+[debug] [2019-06-13T00:22:38.731Z] Time:          Wed Jun 12 2019 18:22:38 GMT-0600 (MDT)
+[debug] [2019-06-13T00:22:38.731Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-13T00:22:38.750Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-13T00:22:38.751Z] > authorizing via signed-in user
+[debug] [2019-06-13T00:22:38.751Z] [iam] checking project justink-creative for permissions ["firebase.projects.get"]
+[debug] [2019-06-13T00:22:38.754Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-13T00:22:38.755Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-13T00:22:39.054Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-13T00:22:39.075Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative:testIamPermissions  
+
+[debug] [2019-06-13T00:22:39.712Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-13T00:22:39.719Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justink-creative  
+ 
+[debug] [2019-06-13T00:22:39.926Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/creativeProjects/creative4'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-13T00:22:41.506Z] Fetching environment
+[debug] [2019-06-13T00:22:41.510Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286:getServerAppConfig  
+ 
+[debug] [2019-06-13T00:22:41.510Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/66882057286/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-13T00:22:41.819Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-13T00:22:41.832Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-13T00:22:41.985Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-13T00:22:45.403Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/justink-creative/us-central1/app
+[info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/tickets to http://localhost:5001/justink-creative/us-central1/app for local Function app

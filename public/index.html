@@ -10,17 +10,17 @@
       <div class="header">
         <h1>Welcome to the Student Assignment Grading Database</h1>
       </div>
-      <br>
+      
       <form @submit.prevent="addTicket">
         <div class= "newComment">
-          <input type="text" placeholder="Your Name" id="nameInput" v-model="addedName">
-          <textarea class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment"></textarea>
+          <input type="text" placeholder="Student Name" id="nameInput" v-model="addedName">
+          <input class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment">
           <br>
           <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade">
           <br>
-          <input type="text" placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation">
+          <textarea placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation"></textarea>
           <br>
-          <input type="text" placeholder="Notes" id="notesInput" v-model="addedNotes">
+          <textarea placeholder="Notes" id="notesInput" v-model="addedNotes"></textarea>
           <button id="submitButton">Submit</button>
         </div>
       </form>
