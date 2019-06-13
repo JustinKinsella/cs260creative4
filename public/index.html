@@ -10,7 +10,7 @@
       <div class="header">
         <h1>Welcome to the Student Assignment Grading Database</h1>
       </div>
-      
+
       <form @submit.prevent="addTicket">
         <div class= "newComment">
           <input type="text" placeholder="Student Name" id="nameInput" v-model="addedName">
@@ -36,33 +36,29 @@
       </form>
       <div id="gradeDisplay" class= "newComment">
         <h1> Summary </h1>
+        <br>
         <div v-for="rank in tickets">
-          <h4> {{ rank.name }}: {{ rank.grade }} ___ {{ rank.notes }} </h4>
+          <h4> {{ rank.name }}: {{ rank.grade }} -- {{ rank.notes }} </h4>
         </div>
       </div>
       <div class="container">
           <div class="item"  v-for="student in tickets" >
               <div class="itemBox">
-                <h1 class="studentInfo">
-                  Name: {{ student.name }}
-                </h1>
-                <br>
-                <h1 class="studentInfo">
-                  Assignment: {{ student.assignment }}
-                </h1>
-                <br>
-                <h1 class="studentInfo">
-                  Grade: {{ student.grade }}
-                </h1>
-                <br>
-                <h1 class="studentInfo">
-                  Student Evaluation: {{ student.evaluation }}
-                </h1>
-                <br>
-                <h1 class="studentInfo">
-                  Notes: {{ student.notes }}
-                </h1>
                 <button id="deleteButton" @click="deleteTicket(student)"> Delete </button>
+                <h2 class="studentField"> Name: </h2>
+                <h3 class="studentInfo"> {{ student.name }} </h3>
+                <br>
+                <h2 class="studentInfo"> Assignment: </h2>
+                <h3 class="studentInfo"> {{ student.assignment }} </h3>
+                <br>
+                <h2 class="studentInfo"> Grade: </h2>
+                <h3 class="studentInfo"> {{ student.grade }} </h3>
+                <br>
+                <h2 class="studentInfo"> Student Evaluation: </h2>
+                <h3 class="studentInfo"> {{ student.evaluation }} </h3>
+                <br>
+                <h2 class="studentInfo"> Notes: </h2>
+                <h3 class="studentInfo"> {{ student.notes }} </h3>
               </div>
           </div>
       </div>

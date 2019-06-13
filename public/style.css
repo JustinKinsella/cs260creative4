@@ -77,9 +77,21 @@
   display: float;
 }
 
+#deleteButton {
+  background-color: grey;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 15px;
+  float: right;
+}
+
 #submitButton {
     float: right;
-    background-color: grey ;
+    background-color: grey;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -94,6 +106,15 @@
 #submitButton :hover {
     background: #42cbf4;
 
+}
+
+.studentField {
+  display: inline;
+}
+
+.studentInfo {
+  display: inline;
+  font-weight: bold;
 }
 
 .container {
@@ -121,7 +142,7 @@
 
 #footer {
     text-align: center;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     background: #33cc33;
     color: #000000;
