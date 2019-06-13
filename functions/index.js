@@ -52,11 +52,16 @@ app.delete('/api/tickets/:id', async (req, res) => {
 app.put('/api/tickets/:id', async (req, res) => {
   let id = req.params.id.toString();
   var toEdit = ticketsRef.doc(id);
-  
+  console.log(req.params);
   try {
     var doc = await toEdit.get();
     let ticket = {
-      grade: req.params.grade,
+      id: req.params.id,
+      name: req.body.name,
+      assignment: req.body.assignment,
+      evaluation: req.body.evaluation,
+      notes: req.body.notes,
+      grade: req.body.grade,
     };
     if(!doc.exists) {
       res.status(404).send("That item does not exist!");

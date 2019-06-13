@@ -49,8 +49,15 @@ let app = new Vue({
           try {
             let response = await axios.put("/api/tickets/" + ticket.id, {
               grade: "A",
+              name: ticket.name,
+              assignment: ticket.assignment,
+              evaluation: ticket.evaluation,
+              notes: ticket.notes,
+
             });
             this.getTickets();
+            window.location.reload(true); //Forces page to reload from server instead of cache
+
             return true;
           } catch (error) {
             console.log(error);
@@ -61,8 +68,14 @@ let app = new Vue({
           try {
             let response = await axios.put("/api/tickets/" + ticket.id, {
               grade: "F",
+              name: ticket.name,
+              assignment: ticket.assignment,
+              evaluation: ticket.evaluation,
+              notes: ticket.notes,
             });
             this.getTickets();
+            window.location.reload(true); //Forces page to reload from server instead of cache
+
             return true;
           } catch (error) {
             console.log(error);
