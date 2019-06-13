@@ -17,13 +17,16 @@
           <input class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment">
           <br>
           <!-- <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade"> -->
-          <select name="grade" id="gradeInput" v-model="addedGrade">
-            <option value="A"></option>
-            <option value="B"></option>
-            <option value="C"></option>
-            <option value="D"></option>
-            <option value="F"></option>
-          </select>
+          <div id="gradeInput">
+          <select v-model="addedGrade">
+              <option value="0" disabled>Grade</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+              <option value="4">D</option>
+              <option value="5">F</option>
+            </select>
+          </div>
           <br>
           <textarea placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation"></textarea>
           <br>
