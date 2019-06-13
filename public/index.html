@@ -15,23 +15,23 @@
         <div class= "newComment">
           <input type="text" placeholder="Student Name" id="nameInput" v-model="addedName">
           <input class="commentText" placeholder="Assignment" id="assignmentInput" v-model="addedAssignment">
-          <br>
-          <!-- <input type="text" placeholder="Grade" id="gradeInput" v-model="addedGrade"> -->
+
+          <textarea placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation"></textarea>
+          <textarea placeholder="Notes" id="notesInput" v-model="addedNotes"></textarea>
+          
           <div id="gradeInput">
-          <select v-model="addedGrade">
-              <option value="0" disabled>Grade</option>
-              <option value="1">A</option>
-              <option value="2">B</option>
-              <option value="3">C</option>
-              <option value="4">D</option>
-              <option value="5">F</option>
+            <select v-model="addedGrade" class="select-css">
+              <option disabled>Grade</option>
+              <option >A</option>
+              <option >B</option>
+              <option >C</option>
+              <option >D</option>
+              <option >F</option>
             </select>
           </div>
-          <br>
-          <textarea placeholder="Student Evaluation" id="evaluationInput" v-model="addedEvaluation"></textarea>
-          <br>
-          <textarea placeholder="Notes" id="notesInput" v-model="addedNotes"></textarea>
+
           <button id="submitButton">Submit</button>
+
         </div>
       </form>
       <div id="gradeDisplay" class= "newComment">

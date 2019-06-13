@@ -3,7 +3,7 @@ let app = new Vue({
     data: {
         addedName: '',
         addedAssignment: '',
-        addedGrade: '',
+        addedGrade: "Grade",
         addedEvaluation: '',
         addedNotes: '',
         tickets: [],
@@ -24,7 +24,7 @@ let app = new Vue({
                 console.log("ADD TICKET - RESPONSE: ",response);
                 this.addedName = "";
                 this.addedAssignment = "";
-                this.addedGrade = "";
+                this.addedGrade = "Grade";
                 this.addedEvaluation = "";
                 this.addedNotes = "";
                 this.getTickets();

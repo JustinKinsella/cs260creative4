@@ -19,7 +19,7 @@ app.post('/api/tickets', async (req, res) => {
   let querySnapshot = await ticketsRef.get();
   let numRecords = querySnapshot.docs.length;
   let ticket = {
-    id: numRecords + 2,
+    id: "created" + Date(),
     name: req.body.name,
     assignment: req.body.assignment,
     grade: req.body.grade,
